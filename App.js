@@ -408,54 +408,172 @@ Touchable 系列组件
 //   }
 // });
 
-/*
-使用滚动视图
-*/
-import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, Text } from 'react-native';
+// /*
+// 使用滚动视图
+// */
+// import React, { Component } from 'react';
+// import { AppRegistry, ScrollView, Image, Text } from 'react-native';
 
-export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
-  render(){
-    return(
-      <ScrollView>
-        <Text style={{fontSize:96}}>Scroll me plz</Text>
-        <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:96}}>If you like</Text>
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:96}}>Scrolling down</Text>
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:96}}>What's the best</Text>
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:96}}>Framework around?</Text>
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
-          <Text style={{fontSize:80}}>React Native</Text>
-      </ScrollView>
-      );
-  }
+// export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
+//   render(){
+//     return(
+//       <ScrollView>
+//         <Text style={{fontSize:96}}>Scroll me plz</Text>
+//         <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Text style={{fontSize:96}}>If you like</Text>
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Text style={{fontSize:96}}>Scrolling down</Text>
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Text style={{fontSize:96}}>What's the best</Text>
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Text style={{fontSize:96}}>Framework around?</Text>
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+//           <Text style={{fontSize:80}}>React Native</Text>
+//       </ScrollView>
+//       );
+//   }
+// }
+
+
+// /*
+// 使用长列表 FlatList
+// */
+// import React, { Component } from 'react';
+// import { FlatList, SectionList, StyleSheet, View, Text } from 'react-native';
+
+// export default class FlatListBasic extends Component {
+//   render(){
+//     return(
+//       <View style={styles.container}>
+//          <FlatList 
+//            data= {[
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             {key:'Devin'},
+//             ]}
+//             renderItem={({item}) =><Text style={styles.item}>{item.key}</Text>}
+//          />
+//       </View>
+//   );
+//   }
+// }
+
+// const styles = StyleSheet.create({
+//   container:{
+//    flex:1,
+//    paddingTop:22
+//   },
+//   item:{
+//     padding:10,
+//     fontSize:18,
+//     height:44,
+//   },
+// });
+
+// /*
+// 使用长列表 SectionList
+// */
+// import React, { Component } from 'react';
+// import { FlatList, SectionList, StyleSheet, View, Text } from 'react-native';
+
+// export default class SectionListBasic extends Component {
+//    render(){
+//      return(
+//       <View style={styles.container}>
+//         <SectionList
+//             sections={
+//               [
+//                  {title:'D',data:'Devin'},
+//                  {title:'E',data:'Devin1'},
+//               ]
+//             }
+
+//             renderItem={({item})=> <Text style={styles.item}>{item}</Text>}
+//             renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text> }
+//             // keyExtractor={(item,index)=> index}
+//         />
+//       </View>
+//       );
+//    }
+
+// }
+
+// const styles = StyleSheet.create({
+//   container:{
+//    flex:1,
+//    paddingTop:22
+//   },
+//    sectionHeader: {
+//     paddingTop: 2,
+//     paddingLeft: 10,
+//     paddingRight: 10,
+//     paddingBottom: 2,
+//     fontSize: 14,
+//     fontWeight: 'bold',
+//     backgroundColor: 'rgba(247,247,247,1.0)',
+//   },
+//   item:{
+//     padding:10,
+//     fontSize:18,
+//     height:44,
+//   },
+// });
+
+/*
+  网络
+*/
+
+function getMoviesFromApiAsync() {
+  return fetch("https://facebook.github.io/react-native/movies.json")
+    .then(response => response.json())
+    .then(responseJson => {
+      return responseJson.movies;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 }
 
+// asyn fuction getMoviesFromApi() {
+//    try {
 
+//         // 注意这里的await语句，其所在的函数必须有async关键字声明
+//       let  response  = await fetch(
+//           "https://facebook.github.io/react-native/movies.json"
+//        );
 
+//       let responseJson = await response.json();
+//       return  response.movies;
+//    } catch(error){
+//         console.error(error);
+//    }
+
+// }
 
 
 
